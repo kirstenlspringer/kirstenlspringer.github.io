@@ -1,7 +1,506 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm Hosted with Github Pages.</p>
-<body>
-<html>
+	<head>
+		<title>Kirsten Springer's Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("li[data-type]:visible:last>div>div").addClass("uk-padding-remove-bottom");
+				$(".uk-filter a").click(function(){
+					$("li[data-type]>div>div").removeClass("uk-padding-remove-bottom");
+					setTimeout(function (){
+						$("li[data-type]:visible:last>div>div").addClass("uk-padding-remove-bottom");
+					}, 500);
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div align="center">
+			<div class="uk-padding-small-top uk-section-muted uk-margin-medium-bottom uk-position-relative">
+				<div class="uk-width-1-1 uk-width-2xlarge@s uk-position-relative" style="padding: 0 15px;">
+					<header class="uk-padding-small-top uk-grid-small uk-grid-collapse@m uk-child-width-1-1" uk-grid>
+						<h1>Kirsten Springer</h1>
+						<h3 class="uk-text-large uk-text-light"><font color="#9900FF">Game 
+						Dev and Software Engineer</font></h3>
+					</header>
+					
+					<hr class="uk-width-large uk-width-1-1@m uk-align-center uk-margin-remove-bottom">
+				</div>
+				
+				<nav class="uk-navbar-container" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-box-shadow-small; cls-inactive: uk-navbar-transparent;" uk-navbar>
+					<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav uk-child-width-1-2">
+							<li class="uk-padding-small"><a href="../">Home</a></li>
+							<li class="uk-padding-small">
+								<a>Projects</a>
+								<div class="uk-navbar-dropdown uk-text-left" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify; offset: 0">
+									<div class="uk-navbar-dropdown-grid uk-child-width-expand uk-margin-remove-left" uk-grid>
+										<ul class="uk-subnav uk-subnav-pill uk-flex-center uk-text-center" uk-margin>
+									   		<li><a href="./projects/wretched-depths.html">Wretched Depths<br><span class="uk-text-italic uk-text-capitalize">2022-Present</span></a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+				
+			<main class="uk-width-1-1 uk-width-3xlarge@s uk-text-left uk-grid-large uk-child-width-1-1" uk-grid>
+				<section>
+					<div class="uk-child-width-1-1"  uk-grid>
+						<div class="uk-width-expand@s">
+							<h2 id="about" class="uk-heading-divider title-link"><a href="#about">About me</a></h2>
+							<p>Hello! My name is Kirsten Springer. I'm a senior at the <span class="uk-text-primary uk-text-bold">University of Utah</span> studying <span class="uk-text-primary uk-text-bold">Computer Science</span> with an emphasis in <span class="uk-text-primary uk-text-bold">Game Development</span>. I have 4 years of experience developing non game related applications for <span class="uk-text-primary uk-text-bold">Windows, macOS,</span> and <span class="uk-text-primary uk-text-bold">Web.</span> I have also developed games in <span class="uk-text-primary uk-text-bold">Gamemaker</span> and <span class="uk-text-primary uk-text-bold">Unity</span>.</p>
+							<div class="">
+								<span class="uk-margin-small-right" uk-icon="icon:file-pdf; ratio:1.5"></span><a class="uk-text-middle" href="./file/MATTEO_GRAIZZARO-PROGRAMMER_RESUME.pdf" target="_blank"><span>Resume</span></a>
+							</div>
+						</div>
+						<div class="width-contacts">
+							<h2 id="contacts" class="uk-heading-divider title-link"><a href="#contacts">Contacts</a></h2>
+							<div class="uk-grid-row-small uk-child-width-1-1" uk-grid>
+								<div class="uk-grid-small@s uk-child-width-auto uk-child-width-1-1@l uk-grid-row-collapse uk-flex-center uk-flex-left@s" uk-grid="masonry: true">
+									<div class="">
+										<span class="uk-margin-small-right" uk-icon="email"></span><a class="uk-text-middle" href="mailto:kirstenlspringer@gmail.com" target="_blank"><span>kirstenlspringer@gmail.com</span></a>
+									</div>
+									<div class="">
+										<span class="uk-margin-small-right" uk-icon="linkedin"></span><a class="uk-text-middle" href="https://www.linkedin.com/in/matteo-graizzaro/" target="_blank"><span>/in/kirstenlspringer/</span></a>
+									</div>
+									<div class="">
+										<span class="uk-margin-small-right" uk-icon="twitter"></span><a class="uk-text-middle" href="https://twitter.com/Velociraptoastr" target="_blank"><span>@Velociraptoastr</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2 id="skills" class="uk-heading-divider title-link"><a href="#skills">Skills</a></h2>
+					<div class="uk-grid-divider uk-flex-right uk-grid-column-small uk-grid-row-small uk-text-left uk-child-width-1-1" uk-grid>
+						<div class="uk-grid-column-medium" uk-grid>
+							<div class="uk-width-small@s uk-flex uk-flex-left"><div><h4 class="uk-text-uppercase uk-margin-remove"><span>Languages</span></h4></div></div>
+							<div class="uk-width-expand@s uk-grid-medium uk-flex-center uk-flex-left@s" uk-grid>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: c-sharp; ratio: 1.5"></span>
+									<span class="uk-text-middle">C#</span>
+								</div>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: react; ratio: 1.5"></span>
+									<span class="uk-text-middle">React</span>
+								</div>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: js; ratio: 1.5"></span>
+									<span class="uk-text-middle">JavaScript</span>
+								</div>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: python; ratio: 1.5"></span>
+									<span class="uk-text-middle">Python</span>
+								</div>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: mysql; ratio: 1.5"></span>
+									<span class="uk-text-middle">MySQL</span>
+								</div>
+
+							</div>
+						</div>
+						<div class="uk-grid-column-medium" uk-grid>
+							<div class="uk-width-small@s uk-flex uk-flex-middle"><div><h4 class="uk-text-uppercase uk-margin-remove"><span>Platforms</span></h4></div></div>
+							<div class="uk-width-expand@s uk-grid-medium uk-flex-center uk-flex-left@s" uk-grid>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: windows; ratio: 1.5"></span>
+									<span class="uk-text-middle">Windows</span>
+								</div>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: apple; ratio: 1.5"></span>
+									<span class="uk-text-middle">macOS</span>
+								</div>
+							</div>
+						</div>
+						<div class="uk-grid-column-medium" uk-grid>
+							<div class="uk-width-small@s uk-flex uk-flex-middle"><div><h4 class="uk-text-uppercase uk-margin-remove"><span>Engines</span></h4></div></div>
+							<div class="uk-width-expand@s uk-grid-medium uk-flex-center uk-flex-left@s" uk-grid>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: unity; ratio: 1.5"></span>
+									<span class="uk-text-middle">Unity</span>
+								</div>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: unreal; ratio: 1.5"></span>
+									<span class="uk-text-middle">Unreal Engine 5</span>
+								</div>
+								<div>
+									<span class="uk-text-middle">Gamemaker</span>
+								</div>
+							</div>
+						</div>
+						<div class="uk-grid-column-medium" uk-grid>
+							<div class="uk-width-small@s uk-flex uk-flex-middle"><div><h4 class="uk-text-uppercase uk-margin-remove"><span>Tools</span></h4></div></div>
+							<div class="uk-width-expand@s uk-grid-medium uk-flex-center uk-flex-left@s" uk-grid>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: git; ratio: 1.5"></span>
+									<span class="uk-text-middle">Git</span>
+								</div>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: github; ratio: 1.5"></span>
+									<span class="uk-text-middle">Github</span>
+								</div>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: slack; ratio: 1.5"></span>
+									<span class="uk-text-middle">Slack</span>
+								</div>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: trello; ratio: 1.5"></span>
+									<span class="uk-text-middle">Trello</span>
+								</div>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: figma; ratio: 1.5"></span>
+									<span class="uk-text-middle">Figma</span>
+								</div>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: adobe; ratio: 1.5"></span>
+									<span class="uk-text-middle">Adobe Suite</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2 id="experience" class="uk-heading-divider title-link"><a href="#experience">Experience</a></h2>
+					<div class="uk-filter" uk-filter="target: .js-filter; animation: delayed-fade;">
+						<div class="uk-grid-small uk-grid-divider uk-child-width-auto uk-flex-center" uk-grid>
+							<div class="uk-flex-left@s uk-width-auto uk-width-expand@s">
+								<ul class="uk-subnav uk-subnav-pill" uk-margin>
+									<li class="uk-active" uk-filter-control><a href="#">All</a></li>
+									<li uk-filter-control="filter: [data-type='indie']; group: data-type"><a href="#">Indie Games</a></li>
+									<li uk-filter-control="filter: [data-type='industry']; group: data-type"><a href="#">Work Experience</a></li>
+									<li uk-filter-control="filter: [data-type='education']; group: data-type"><a href="#">Education</a></li>
+								</ul>
+							</div>
+							<div>
+								<ul class="uk-subnav uk-subnav-pill" uk-margin>
+									<li class="uk-active" uk-filter-control="sort: data-date; order: desc"><a href="#"><span uk-icon="icon: arrow-down" style="color:#d6d4d4;"></span><span class="uk-text-middle">Descending</span></a></li>
+									<li uk-filter-control="sort: data-date"><a href="#"><span uk-icon="icon: arrow-down;" style="color:#d6d4d4;"></span><span class="uk-text-middle">Ascending</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<ul class="js-filter uk-child-width-1-1" uk-grid>
+							<li data-type="indie" data-date="2022-11-01">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div><span uk-icon="icon: windows; ratio: 1.5"></span></div>
+										<div class="uk-margin-small-top uk-text-break"><h4>Oct 2022 - Present</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
+											<!--<li><a href="" uk-icon="icon: artstation; ratio: 1.25" target="_blank"></a></li>-->
+										</ul>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span class="uk-position-relative">
+																	<a href="projects/wretched-depths.html" target="_blank">Wretched Depths</a>
+																	<span class="uk-text-middle" uk-icon="icon: unity; ratio: 1.25" style="padding-bottom: 4px;"></span>
+																</span>
+															</h3>
+														</div>
+														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
+															<li><a href="https://store.steampowered.com/app/2343240/Wretched_Depths/" uk-icon="icon: steam; ratio: 1.25" target="_blank"></a></li>
+															<li><a href="https://wretcheddevsstudios.itch.io/wretched-depths" uk-icon="icon: itch-dot-io; ratio: 1.25" target="_blank"></a></li>
+														</ul>
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">Systems Engineer/Marketing Lead</h4></div>
+													<div class="uk-margin-small-top">
+														[update this].
+													</div>
+													<div class="uk-margin-small-top uk-text-left uk-grid-column-small" uk-grid>
+														<div class="uk-width-auto">
+															<a href="projects/village.html" class="uk-button uk-button-text" target="_blank"><span uk-icon="more" class="uk-icon" style="margin-right: 5px"></span><span class="uk-text-middle">Read more</span></a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li data-type="indie" data-date="2021-09-1">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div><span uk-icon="icon: windows; ratio: 1.5"></span></div>
+										<div class="uk-margin-small-top uk-text-break"><h4>Aug 2021 - Dec 2021</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
+											<li><a href="https://matteo-graizzaro.itch.io/ploppem" uk-icon="icon: itch-dot-io; ratio: 1.25" target="_blank"></a></li>
+										</ul>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span>
+																	<a href="projects/ploppem.html" target="_blank">emBARK</a>
+																	<span class="uk-text-middle" uk-icon="icon: unity; ratio: 1.25" style="padding-bottom: 4px;"></span>
+																</span>
+															</h3>
+														</div>
+														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
+															<li><a href="https://matteo-graizzaro.itch.io/ploppem" uk-icon="icon: itch-dot-io; ratio: 1.25" target="_blank"></a></li>
+														</ul>
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">Doggy Platformer Game</h4></div>
+													<div class="uk-margin-small-top">
+														[update this]
+													</div>
+													<div class="uk-margin-small-top uk-text-left uk-grid-column-small" uk-grid>
+														<div class="uk-width-auto">
+															<a href="projects/embark.html" class="uk-button uk-button-text" target="_blank"><span uk-icon="more" class="uk-icon" style="margin-right: 5px"></span><span class="uk-text-middle">Read more</span></a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li data-type="indie" data-date="2021-01-1">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div><span uk-icon="icon: windows; ratio: 1.5"></span></div>
+										<div class="uk-margin-small-top uk-text-break"><h4>Jan 2021 - May 2021</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
+											<li><a href="https://matteo-graizzaro.itch.io/ploppem" uk-icon="icon: itch-dot-io; ratio: 1.25" target="_blank"></a></li>
+										</ul>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span>
+																	<a href="projects/ploppem.html" target="_blank">Skyglow</a>
+																</span>
+															</h3>
+														</div>
+														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
+															<li><a href="https://matteo-graizzaro.itch.io/ploppem" uk-icon="icon: itch-dot-io; ratio: 1.25" target="_blank"></a></li>
+														</ul>
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">A Child Wishes to See the Stars...</h4></div>
+													<div class="uk-margin-small-top">
+														[update this]
+													</div>
+													<div class="uk-margin-small-top uk-text-left uk-grid-column-small" uk-grid>
+														<div class="uk-width-auto">
+															<a href="projects/embark.html" class="uk-button uk-button-text" target="_blank"><span uk-icon="more" class="uk-icon" style="margin-right: 5px"></span><span class="uk-text-middle">Read more</span></a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div><li data-type="industry" data-date="2022-05-15">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div><span uk-icon="icon: pencil; ratio: 1.5"></span></div>
+										<div class="uk-margin-small-top uk-text-break"><h4>May 2022 - Aug 2022</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
+											<li><a href="https://www.gamedeveloper.com/production/going-deep-in-the-steam-reviews" uk-icon="icon: gamasutra; ratio: 1.25" target="_blank"></a></li>
+											<li><a href="https://matteograizzaro.medium.com/going-deep-in-the-steam-reviews-2b663a152179" uk-icon="icon: medium; ratio: 1.25" target="_blank"></a></li>
+										</ul>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span>
+																	<a>Mojang Studios Internship</a>
+																</span>
+															</h3>
+														</div>
+														
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">Creating a New Build Platform Interface</h4></div>
+													<div class="uk-margin-small-top">
+														[update this].
+													</div>
+													<div class="uk-margin-small-top uk-text-left uk-grid-column-small" uk-grid>
+														<div class="uk-width-auto">
+															<a href="projects/mojang.html" class="uk-button uk-button-text" target="_blank"><span uk-icon="more" class="uk-icon" style="margin-right: 5px"></span><span class="uk-text-middle">Read more</span></a>
+														</div>
+														<!--<div class="uk-width-auto">
+															<a href="file/projects/robocraft/Robocraft Reviews Article.zip" class="uk-button uk-button-text" download><span uk-icon="download" class="uk-icon" style="margin-right: 5px"></span><span class="uk-text-middle">Download files</span></a>
+														</div> -->
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							</li><li data-type="industry" data-date="2021-05-15">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div><span uk-icon="icon: pencil; ratio: 1.5"></span></div>
+										<div class="uk-margin-small-top uk-text-break"><h4>May 2021 - Aug 2021</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
+											<li><a href="https://www.gamedeveloper.com/production/going-deep-in-the-steam-reviews" uk-icon="icon: gamasutra; ratio: 1.25" target="_blank"></a></li>
+											<li><a href="https://matteograizzaro.medium.com/going-deep-in-the-steam-reviews-2b663a152179" uk-icon="icon: medium; ratio: 1.25" target="_blank"></a></li>
+										</ul>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span>
+																	<a>Microsoft Excel Internship</a>
+																</span>
+															</h3>
+														</div>
+														
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">SWE Internship Working on the UI for the Sort Feature</h4></div>
+													<div class="uk-margin-small-top">
+														[update this].
+													</div>
+													<div class="uk-margin-small-top uk-text-left uk-grid-column-small" uk-grid>
+														<!--<div class="uk-width-auto">
+															<a href="https://www.gamedeveloper.com/production/going-deep-in-the-steam-reviews" class="uk-button uk-button-text" target="_blank"><span uk-icon="more" class="uk-icon" style="margin-right: 5px"></span><span class="uk-text-middle">Read more</span></a>
+														</div>
+														<div class="uk-width-auto">
+															<a href="file/projects/robocraft/Robocraft Reviews Article.zip" class="uk-button uk-button-text" download><span uk-icon="download" class="uk-icon" style="margin-right: 5px"></span><span class="uk-text-middle">Download files</span></a>
+														</div> -->
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li data-type="industry" data-date="2020-05-15">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div><span uk-icon="icon: pencil; ratio: 1.5"></span></div>
+										<div class="uk-margin-small-top uk-text-break"><h4>May 2020 - Aug 2020</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
+											<li><a href="https://www.gamedeveloper.com/production/going-deep-in-the-steam-reviews" uk-icon="icon: gamasutra; ratio: 1.25" target="_blank"></a></li>
+											<li><a href="https://matteograizzaro.medium.com/going-deep-in-the-steam-reviews-2b663a152179" uk-icon="icon: medium; ratio: 1.25" target="_blank"></a></li>
+										</ul>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span>
+																	<a>Microsoft Excel Internship</a>
+																</span>
+															</h3>
+														</div>
+														
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">Explorer Internship Working on the Card Feature</h4></div>
+													<div class="uk-margin-small-top">
+														[update this].
+													</div>
+													<div class="uk-margin-small-top uk-text-left uk-grid-column-small" uk-grid>
+														<!--<div class="uk-width-auto">
+															<a href="https://www.gamedeveloper.com/production/going-deep-in-the-steam-reviews" class="uk-button uk-button-text" target="_blank"><span uk-icon="more" class="uk-icon" style="margin-right: 5px"></span><span class="uk-text-middle">Read more</span></a>
+														</div>
+														<div class="uk-width-auto">
+															<a href="file/projects/robocraft/Robocraft Reviews Article.zip" class="uk-button uk-button-text" download><span uk-icon="download" class="uk-icon" style="margin-right: 5px"></span><span class="uk-text-middle">Download files</span></a>
+														</div> -->
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li data-type="education" data-date="2019-09">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div><span uk-icon="icon: school; ratio: 1.5"></span></div>
+										<div class="uk-margin-small-top uk-text-break"><h4>August 2019 - Present</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
+											<li><a href="https://www.eventhorizonschool.com/" uk-icon="icon: link; ratio: 1.25" target="_blank"></a></li>
+										</ul>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span>University of Utah</span>
+															</h3>
+														</div>
+														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
+															<li><a href="https://www.utah.edu/" uk-icon="icon: link; ratio: 1.25" target="_blank"></a></li>
+														</ul>
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">Computer Science with an emphasis in Entertainment Arts Engineering</h4></div>
+													<div class="uk-margin-small-top">
+														[update this].
+													</div>
+													<div class="uk-margin-small-top uk-text-left uk-grid-column-small" uk-grid>
+														<div class="uk-width-auto">
+															<a href="projects/utah.html" class="uk-button uk-button-text" target="_blank"><span uk-icon="more" class="uk-icon" style="margin-right: 5px"></span><span class="uk-text-middle">Course List</span></a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</main>
+			
+			<div class="uk-width-1-1 uk-width-3xlarge@s">
+				<footer class="uk-margin-large-top uk-padding-small">
+					<div class="uk-text-central uk-child-width-1-1" uk-grid>
+						<div class="uk-child-width-1-1 uk-flex-center uk-child-width-auto@s uk-grid-collapse uk-grid-medium@s" uk-grid>
+							<div>Email: <a href="">kirstenlspringer@gmail.com</a></div>
+							<div>LinkedIn: <a href="">/in/kirstenlspringer/</a></div>
+							<div class="uk-text-left@s">
+								Icons by <a href="https://simpleicons.org/" target="_blank">Simple Icons</a> & <a href="https://neuicons.com/" target="_blank">Neu Icons</a>
+							</div>
+							<div>Website layout inspired by <a href="https://vacui.github.io/"target="_blank">Matteo Graizzaro</a>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>
