@@ -668,7 +668,7 @@ button.uk-icon:not(:disabled) {
     color: #999;
 }
 .uk-icon-link:focus, .uk-icon-link:hover {
-    color: #666;
+    color: #ffffff;
     outline: 0;
 }
 .uk-active>.uk-icon-link, .uk-icon-link:active {
@@ -3498,10 +3498,10 @@ ul.uk-subnav.uk-subnav-pill.uk-flex-center.uk-text-center.uk-first-column  {
 }
 .uk-iconnav>*>a {
     display: block;
-    color: #895cd6;
+    color: #ffffff;
 }
 .uk-iconnav>*>a:focus, .uk-iconnav>*>a:hover {
-    color: #666;
+    color: #ffffff;
     outline: 0;
 }
 .uk-iconnav>.uk-active>a {
